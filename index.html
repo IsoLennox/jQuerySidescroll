@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title> 
+        <link rel="stylesheet" href="scene.css">
+        <link rel="stylesheet" href="base.css">
+					
+		<!-- verticle scroll js-->				
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script>
+	$(function(){
+		$("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
+		$(".post").wrap("<td></td>");
+		$("body").mousewheel(function(event, delta) {
+			this.scrollLeft -= (delta * 30);
+			event.preventDefault();
+		});   
+	});
+	</script>	<!--End verticle scroll js-->
+					
+    </head>
+    
+
+    
+<body>
+    
+    <section id="scene">
+<img id="cloud1" src="img/1_0003_cloud1.png" />
+<img id="cloud2" src="img/1_0002_cloud2.png" />
+<img id="cloud3" src="img/1_0001_cloud3.png" />
+  
+    
+     </section><!--END #SCENE-->
+    
+ 
+
+ 
+	
+ <section class="page" >
+         <section class="tiles" id="makeMeScrollable">
+ 
+										
+	<!--each  of the tile/items are in table data, single row for verticle scroll-->
+			<table>
+  <tr>
+   
+    <td><!-- START FLIP -->
+										<div id =" " class="gallery-item flip" ontouchstart="this.classList.toggle('hover');">
+	      <div class="flipper">
+		        <div class="front">
+          <img src="img/le-chemin-de-la-maison.jpg"/>
+		        </div>
+		        <div class="back">
+          <div class="text">
+           <span>INFO</span>
+											
+											
+										<a href="text.html">	Also, click here to see text version.</a></span>
+        </div>
+              <div class="icon">
+          <span><i class="fa fa-check-circle"></i></span>
+         </div>
+		        </div>
+	      </div>
+			    </div>
+	</div><!-- END FLIP -->  </td>
+		
+		
+		
+		 <td><!-- START FLIP -->
+										<div id =" " class="gallery-item flip" ontouchstart="this.classList.toggle('hover');">
+	      <div class="flipper">
+		        <div class="front">
+          <img src="img/le-chemin-de-la-maison.jpg"/>
+		        </div>
+		        <div class="back">
+          <div class="text">
+           <span>INFO</span>
+											
+											
+										<a href="text.html">	Also, click here to see text version.</a></span>
+        </div>
+              <div class="icon">
+          <span><i class="fa fa-check-circle"></i></span>
+         </div>
+		        </div>
+	      </div>
+			    </div>
+	</div><!-- END FLIP -->  </td>
+
+
+ <td><!-- START FLIP -->
+										<div id =" " class="gallery-item flip" ontouchstart="this.classList.toggle('hover');">
+	      <div class="flipper">
+		        <div class="front">
+          <img src="img/le-chemin-de-la-maison.jpg"/>
+		        </div>
+		        <div class="back">
+          <div class="text">
+           <span>INFO</span>
+											
+											
+										<a href="text.html">	Also, click here to see text version.</a></span>
+        </div>
+              <div class="icon">
+          <span><i class="fa fa-check-circle"></i></span>
+         </div>
+		        </div>
+	      </div>
+			    </div>
+	</div><!-- END FLIP -->  </td>
+
+
+ <td><!-- START FLIP -->
+										<div id =" " class="gallery-item flip" ontouchstart="this.classList.toggle('hover');">
+	      <div class="flipper">
+		        <div class="front">
+          <img src="img/le-chemin-de-la-maison.jpg"/>
+		        </div>
+		        <div class="back">
+          <div class="text">
+           <span>INFO</span>
+											
+											
+										<a href="text.html">	Also, click here to see text version.</a></span>
+        </div>
+              <div class="icon">
+          <span><i class="fa fa-check-circle"></i></span>
+         </div>
+		        </div>
+	      </div>
+			    </div>
+	</div><!-- END FLIP -->  </td>
+
+
+ <td><!-- START FLIP -->
+										<div id =" " class="gallery-item flip" ontouchstart="this.classList.toggle('hover');">
+	      <div class="flipper">
+		        <div class="front">
+          <img src="img/le-chemin-de-la-maison.jpg"/>
+		        </div>
+		        <div class="back">
+          <div class="text">
+           <span>INFO</span>
+											
+											
+										<a href="text.html">	Also, click here to see text version.</a></span>
+        </div>
+              <div class="icon">
+          <span><i class="fa fa-check-circle"></i></span>
+         </div>
+		        </div>
+	      </div>
+			    </div>
+	</div><!-- END FLIP -->  </td>
+
+ <td><!-- START FLIP -->
+										<div id =" " class="gallery-item flip" ontouchstart="this.classList.toggle('hover');">
+	      <div class="flipper">
+		        <div class="front">
+          <img src="img/le-chemin-de-la-maison.jpg"/>
+		        </div>
+		        <div class="back">
+          <div class="text">
+           <span>INFO</span>
+											
+											
+										<a href="text.html">	Also, click here to see text version.</a></span>
+        </div>
+              <div class="icon">
+          <span><i class="fa fa-check-circle"></i></span>
+         </div>
+		        </div>
+	      </div>
+			    </div>
+	</div><!-- END FLIP -->  </td>
+										
+										
+
+
+
+
+
+ </tr>
+</table>		
+
+           <!-- <div class="pages" id="resources">Resources</div>-->
+	
+            
+        </section><!--END #tiles-->
+     
+    
+    </section> <!--END #PAGE--> 
+    
+    
+<div></div>
+
+</body>
+  </body>
+</html>

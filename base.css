@@ -1,0 +1,308 @@
+/**Eric Meyer's Reset CSS v2.0 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4em;
+    font-size:1em;
+    font-family:"Helvetica Neue",Helvetica,Arial, sans-serif;
+    width:5000px;
+    height:auto;
+    
+    
+    
+    
+    
+}
+
+section {
+    
+        
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    color:FFB600;
+    font-weight:900;
+    margin: 0 0 25px 0;
+        
+}
+
+h1 {font-size:3em;}
+h2 {font-size:2.4em;}
+h3 {font-size:2em;}
+h4 {font-size:1.8em;}
+h5 {font-size:1.6em;}
+h6 {font-size:1.4em;}
+
+p {margin: 0 0 25px 0;}
+
+/* HEADER STYLES */
+
+.main {background:black;
+    margin: 0 0 55px 0;
+    padding: 0 0 35px 0;
+}
+
+.main h1 {padding-top:50px;text-align:center;color:#ddd;}
+
+.menu li { display:inline-block;
+    margin: 0 0 25px 0;
+    
+}
+
+
+.menu a {
+text-decoration:none;
+    color:white;
+    padding:20px;
+    display:block;
+    }
+
+
+/*-----NAVIGATION/MENU------*/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+
+
+/* START NAVBAR */
+nav { 
+ position: fixed;
+	top:25px; left: 40%;
+	
+}
+
+nav a {	color: white;
+	font-size: 4em;
+	text-decoration: none;
+padding: 40px;}
+
+
+
+
+/* END NAV */
+
+/* STRUCTURE */
+
+
+
+/*****FOR VERTICLE SCROLL ***/
+tr { 
+	vertical-align: top;
+}
+.post { 
+	width: 500px; 
+}
+/*****END FOR VERTICLE SCROLL ***/
+
+
+
+.tiles {
+    height:700px;
+    width:5000px;
+    padding: 300px 50px 0 50px;
+   
+}
+/*
+.page {
+    height:300px;
+    width:300px;
+    margin:30px;
+    text-align: center;
+				float:left;
+ 
+}*/
+
+#sixgallery {  
+    }
+
+#artists {
+    background:yellow;
+}
+
+#events {
+   
+    background:purple;
+
+}
+
+#slides{
+    
+    background:green;
+}
+
+#resources{
+    
+    background:brown;
+}
+
+#about {
+   
+    background:cyan;
+}
+
+
+/*-------------Flip Hover----------------------*/
+
+ 
+
+.flip {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+	  perspective: 1000;
+	margin: 20px;
+	
+}
+	/* flip the pane when hovered */
+	.flip:hover .flipper, .flip.hover .flipper {
+	  	-webkit-transform: rotateY(180deg);
+  -moz-transform: rotatetY(180deg);
+  transform: rotateY(180deg);
+	}
+
+.flip, .front, .back {
+	  width: 300px; /*CHANGE TILE SIZE HERE*/
+	  height: 200px;
+			
+}
+
+.flipper {
+	  transition: 0.55s;
+  -webkit-transfrom-style: preserve-3d;
+	  transform-style: preserve-3d;
+	  position: relative;
+}
+.front, .back {
+	  backface-visibility: hidden;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+  border-radius:3px;
+  box-shadow:5px 1px 10px rgba(0,0,0,0.3);
+}
+.back{
+  background:#bdc3c7;
+  padding:1em .5em;
+}
+.back .icon,
+.back .text{
+  opacity:1;
+}
+.back .text{
+  font-size:24px;
+  width:100%;
+  text-align:center;
+}
+.back .icon{
+  text-align:center;
+  width:100%;
+  font-size:46px;
+  padding-top:1em;
+  color:rgba(0,0,0,0.6);
+}
+
+.front {
+	  z-index: 2;
+  overflow:hidden;
+}
+.front img{
+  max-width:100%;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+	  transform: rotateY(180deg);
+  transition-delay:.2s;
+}
+.flip:hover .front{
+  z-index:1;
+}
+.flip:hover .back{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  	transform: rotateY(180deg);
+  z-index:2;
+}
+
+
+
+/* MAKE NOT FLIP */
+
+	/* flip the pane when hovered */
+	#sixgallery .flip:hover .flipper, .flip.hover .flipper {
+	  	-webkit-transform: rotateY(0deg);
+  -moz-transform: rotatetY(0deg);
+  transform: rotateY(0deg);
+	}
+ 
+	#sixgallery .flip:hover .back{
+  -webkit-transform: rotateY( 0deg);
+  -moz-transform: rotateY( 0deg);
+  	transform: rotateY( 0deg);
+  z-index:2;
+}
+
+
+/**********END FLIPPY GALLERY*************/
+
+#makeMeScrollable div.scrollableArea *
+{
+	position: relative;
+	display: block
+	float: left;
+	margin: 0;
+	padding: 0;
+	/* If you don't want the images in the scroller to be selectable, try the following
+		block of code. It's just a nice feature that prevent the images from
+		accidentally becoming selected/inverted when the user interacts with the scroller. */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
